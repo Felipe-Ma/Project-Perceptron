@@ -12,10 +12,11 @@ def unit_step_func(x):
 
 
 class SingleLayerNN:
-    def __init__(self, input_size, output_size, learning_rate=0.01, n_iters=10000):
+    def __init__(self, input_size, output_size, learning_rate=0.05, n_iters=10000):
         self.lr = learning_rate
         self.n_iters = n_iters
-        self.weights = np.zeros((input_size, output_size))
+        #self.weights = np.zeros((input_size, output_size))
+        self.weights = np.random.randn(input_size, output_size) * 0.01
         self.bias = np.zeros(output_size)
 
     def fit(self, X, y):
@@ -82,49 +83,33 @@ class SingleLayerNN:
             incorrect_fire = (neuron_fired & (y_test != i))
             missed_fire = (~neuron_fired & (y_test == i))
 
+            true_negative = (~neuron_fired & (y_test != i))
+            false_positive = incorrect_fire  # already calculated
+            false_negative = missed_fire  # already calculated
+
+
             neuron_stats.append({
                 "neuron": i,
                 "correct_fire": np.mean(correct_fire) * 100,
                 "incorrect_fire": np.mean(incorrect_fire) * 100,
-                "missed_fire": np.mean(missed_fire) * 100
+                "missed_fire": np.mean(missed_fire) * 100,
+                "true_negative": np.mean(true_negative) * 100,
+                "false_positive": np.mean(false_positive) * 100,
+                "false_negative": np.mean(false_negative) * 100
             })
 
         return stats, neuron_stats
 
-
-def test_network(model, data, label_map):
-    X_test = data[['latitude', 'longitude']].values
-    y_test = data['label'].values
-    predictions = model.predict(X_test)
-
-    # Initialize counters
-    correct_predictions = 0
-    multiple_firings = 0
-    no_firings = 0
-    class_stats = {label: {'correct': 0, 'false_positive': 0, 'false_negative': 0} for label in label_map}
-
-    for i, (pred, actual) in enumerate(zip(predictions, y_test)):
-        if pred == actual:
-            correct_predictions += 1
-            class_stats[label_map.inverse[actual]]['correct'] += 1
-        else:
-            class_stats[label_map.inverse[actual]]['false_negative'] += 1
-            class_stats[label_map.inverse[pred]]['false_positive'] += 1
-
-        if sum(pred) > 1:
-            multiple_firings += 1
-        elif sum(pred) == 0:
-            no_firings += 1
-
-    total = len(y_test)
-    print(f"Percentage of perfectly classified examples: {correct_predictions / total * 100:.2f}%")
-    print(f"Percentage of examples causing multiple neurons to fire: {multiple_firings / total * 100:.2f}%")
-    print(f"Percentage of examples causing zero neurons to fire: {no_firings / total * 100:.2f}%")
-    for label, stats in class_stats.items():
-        print(f"Neuron: {label}")
-        for stat, count in stats.items():
-            print(f"   {stat.title()}: {count / total * 100:.2f}%")
-
+    def save_neuron_output(self, neuron_stats, filename="output.txt"):
+        with open(filename, 'a') as f:
+            for stat in neuron_stats:
+                f.write(f"Neuron: {stat['neuron']}\n")
+                f.write(f"   Correct: {stat['correct_fire']:.2f}%\n")
+                f.write(f"   True Positives: {stat['correct_fire']:.2f}%\n")  # Assuming correct_fire is True Positive
+                # True Negative, False Positive, and False Negative calculations need to be implemented
+                f.write(f"   True Negatives: {stat['true_negative']:.2f}%\n")
+                f.write(f"   False Positives: {stat['false_positive']:.2f}%\n")
+                f.write(f"   False Negatives: {stat['false_negative']:.2f}%\n")
 
 
 def load_data(filename):
@@ -137,6 +122,7 @@ def load_data(filename):
 
     data['label'] = data['label'].map(label_map)
     return data, label_map
+
 
 def normalize_data(data):
     data['latitude'] = (data['latitude'] - data['latitude'].mean()) / data['latitude'].std()
@@ -202,6 +188,9 @@ def main_menu():
                     print(f"  Correctly Fired: {neuron_stat['correct_fire']:.2f}%")
                     print(f"  Fired Incorrectly: {neuron_stat['incorrect_fire']:.2f}%")
                     print(f"  Missed Fire: {neuron_stat['missed_fire']:.2f}%")
+
+                model.save_neuron_output(neuron_stats)
+                logging.info("Neuron output saved to output.txt")
 
         elif choice == "5":
             break

@@ -1,0 +1,420 @@
+Neuron: 0
+   Correct: 46.07%
+   True Positives: 46.07%
+   True Negatives: 38.35%
+   False Positives: 15.59%
+   False Negatives: 0.00%
+Neuron: 1
+   Correct: 27.01%
+   True Positives: 27.01%
+   True Negatives: 68.98%
+   False Positives: 3.03%
+   False Negatives: 0.98%
+Neuron: 2
+   Correct: 20.89%
+   True Positives: 20.89%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.33%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.81%
+   False Positives: 1.19%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.32%
+   False Positives: 0.00%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 1.21%
+   True Positives: 1.21%
+   True Negatives: 97.62%
+   False Positives: 1.14%
+   False Negatives: 0.03%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.48%
+   False Positives: 1.38%
+   False Negatives: 0.14%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.73%
+   False Positives: 0.02%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 100.00%
+   False Positives: 0.00%
+   False Negatives: 0.00%
+Neuron: 0
+   Correct: 46.07%
+   True Positives: 46.07%
+   True Negatives: 38.35%
+   False Positives: 15.59%
+   False Negatives: 0.00%
+Neuron: 1
+   Correct: 26.97%
+   True Positives: 26.97%
+   True Negatives: 68.04%
+   False Positives: 3.97%
+   False Negatives: 1.02%
+Neuron: 2
+   Correct: 20.90%
+   True Positives: 20.90%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.31%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 87.79%
+   False Positives: 12.21%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.32%
+   False Positives: 0.00%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.69%
+   False Positives: 0.07%
+   False Negatives: 1.24%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.56%
+   False Positives: 1.30%
+   False Negatives: 0.14%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.73%
+   False Positives: 0.02%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 100.00%
+   False Positives: 0.00%
+   False Negatives: 0.00%
+Neuron: 0
+   Correct: 46.07%
+   True Positives: 46.07%
+   True Negatives: 38.35%
+   False Positives: 15.59%
+   False Negatives: 0.00%
+Neuron: 1
+   Correct: 24.14%
+   True Positives: 24.14%
+   True Negatives: 68.77%
+   False Positives: 3.24%
+   False Negatives: 3.85%
+Neuron: 2
+   Correct: 20.98%
+   True Positives: 20.98%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.23%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.99%
+   False Positives: 0.00%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.32%
+   False Positives: 0.00%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 0.37%
+   True Positives: 0.37%
+   True Negatives: 98.31%
+   False Positives: 0.44%
+   False Negatives: 0.88%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.69%
+   False Positives: 1.17%
+   False Negatives: 0.15%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.73%
+   False Positives: 0.02%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.92%
+   False Positives: 0.07%
+   False Negatives: 0.00%
+Neuron: 0
+   Correct: 25.71%
+   True Positives: 25.71%
+   True Negatives: 50.73%
+   False Positives: 3.20%
+   False Negatives: 20.35%
+Neuron: 1
+   Correct: 27.99%
+   True Positives: 27.99%
+   True Negatives: 67.28%
+   False Positives: 4.73%
+   False Negatives: 0.00%
+Neuron: 2
+   Correct: 20.89%
+   True Positives: 20.89%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.33%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.99%
+   False Positives: 0.01%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.31%
+   False Positives: 0.01%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 0.36%
+   True Positives: 0.36%
+   True Negatives: 97.63%
+   False Positives: 1.13%
+   False Negatives: 0.89%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.73%
+   False Positives: 1.12%
+   False Negatives: 0.14%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.73%
+   False Positives: 0.02%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.54%
+   False Positives: 1.46%
+   False Negatives: 0.00%
+Neuron: 0
+   Correct: 46.07%
+   True Positives: 46.07%
+   True Negatives: 38.79%
+   False Positives: 15.15%
+   False Negatives: 0.00%
+Neuron: 1
+   Correct: 26.44%
+   True Positives: 26.44%
+   True Negatives: 69.87%
+   False Positives: 2.14%
+   False Negatives: 1.55%
+Neuron: 2
+   Correct: 21.12%
+   True Positives: 21.12%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.09%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 89.11%
+   False Positives: 10.89%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.32%
+   False Positives: 0.00%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.60%
+   False Positives: 0.16%
+   False Negatives: 1.24%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.85%
+   False Positives: 0.00%
+   False Negatives: 0.15%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.73%
+   False Positives: 0.02%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.13%
+   False Positives: 2.87%
+   False Negatives: 0.00%
+Neuron: 0
+   Correct: 24.93%
+   True Positives: 24.93%
+   True Negatives: 50.80%
+   False Positives: 3.13%
+   False Negatives: 21.13%
+Neuron: 1
+   Correct: 20.49%
+   True Positives: 20.49%
+   True Negatives: 69.17%
+   False Positives: 2.84%
+   False Negatives: 7.50%
+Neuron: 2
+   Correct: 21.10%
+   True Positives: 21.10%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.12%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 100.00%
+   False Positives: 0.00%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.32%
+   False Positives: 0.00%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 1.23%
+   True Positives: 1.23%
+   True Negatives: 97.03%
+   False Positives: 1.72%
+   False Negatives: 0.01%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.56%
+   False Positives: 1.29%
+   False Negatives: 0.14%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.74%
+   False Positives: 0.01%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.24%
+   False Positives: 0.76%
+   False Negatives: 0.00%
+Neuron: 0
+   Correct: 25.73%
+   True Positives: 25.73%
+   True Negatives: 50.73%
+   False Positives: 3.20%
+   False Negatives: 20.34%
+Neuron: 1
+   Correct: 19.77%
+   True Positives: 19.77%
+   True Negatives: 68.74%
+   False Positives: 3.27%
+   False Negatives: 8.22%
+Neuron: 2
+   Correct: 20.87%
+   True Positives: 20.87%
+   True Negatives: 78.63%
+   False Positives: 0.15%
+   False Negatives: 0.34%
+Neuron: 3
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.24%
+   False Positives: 2.76%
+   False Negatives: 0.00%
+Neuron: 4
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 97.32%
+   False Positives: 0.00%
+   False Negatives: 2.68%
+Neuron: 5
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.59%
+   False Positives: 0.00%
+   False Negatives: 0.41%
+Neuron: 6
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.75%
+   False Positives: 0.00%
+   False Negatives: 1.24%
+Neuron: 7
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 98.87%
+   False Positives: 0.98%
+   False Negatives: 0.15%
+Neuron: 8
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 99.73%
+   False Positives: 0.02%
+   False Negatives: 0.25%
+Neuron: 9
+   Correct: 0.00%
+   True Positives: 0.00%
+   True Negatives: 100.00%
+   False Positives: 0.00%
+   False Negatives: 0.00%
