@@ -12,7 +12,7 @@ def unit_step_func(x):
 
 
 class SingleLayerNN:
-    def __init__(self, input_size, output_size, learning_rate=0.01, n_iters=1000):
+    def __init__(self, input_size, output_size, learning_rate=0.01, n_iters=10000):
         self.lr = learning_rate
         self.n_iters = n_iters
         self.weights = np.zeros((input_size, output_size))
@@ -130,7 +130,11 @@ def test_network(model, data, label_map):
 def load_data(filename):
     data = pd.read_csv(filename, sep='\t', header=None, names=['latitude', 'longitude', 'label'])
     labels = data['label'].unique()
+    print(labels)
+    print(data['label'].value_counts())
+
     label_map = {label: i for i, label in enumerate(labels)}
+
     data['label'] = data['label'].map(label_map)
     return data, label_map
 
@@ -178,7 +182,9 @@ def main_menu():
                 print("Please train or load a model first.")
             else:
                 test_filename = input("Enter the testing data filename: ")
-                test_data, _ = load_data(test_filename)
+                test_data, label_map = load_data(test_filename)
+                #print(label_map)
+                #print(test_data)
                 test_data = normalize_data(test_data)
                 X_test = test_data[['latitude', 'longitude']].values
                 y_test = test_data['label'].values
