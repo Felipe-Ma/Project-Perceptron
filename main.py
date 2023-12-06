@@ -12,21 +12,26 @@ def unit_step_func(x):
 
 
 class SingleLayerNN:
-    def __init__(self, input_size, output_size, learning_rate=0.05, n_iters=10000):
+    def __init__(self, input_size, output_size, learning_rate=0.05, n_iters=1000000):
         self.lr = learning_rate
         self.n_iters = n_iters
         #self.weights = np.zeros((input_size, output_size))
         self.weights = np.random.randn(input_size, output_size) * 0.01
+        print(self.weights)
         self.bias = np.zeros(output_size)
 
     def fit(self, X, y):
         n_samples, _ = X.shape
-
+        #print(n_samples)
         y_encoded = np.zeros((n_samples, self.bias.size))
+        #print(y_encoded)
         y_encoded[np.arange(n_samples), y] = 1
+        #print(y_encoded)
+        #print(len(y_encoded))
 
         for _ in range(self.n_iters):
             linear_output = np.dot(X, self.weights) + self.bias
+            print(linear_output)
             y_predicted = self.activation_func(linear_output)
 
             # Update rule
@@ -145,6 +150,7 @@ def main_menu():
             data = normalize_data(data)
             X = data[['latitude', 'longitude']].values
             y = data['label'].values
+            print(len(label_map))
             model = SingleLayerNN(input_size=2, output_size=len(label_map))
             model.fit(X, y)
             logging.info("Model trained successfully!")
