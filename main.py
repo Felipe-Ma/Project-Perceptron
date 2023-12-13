@@ -12,7 +12,7 @@ def unit_step_func(x):
 
 
 class SingleLayerNN:
-    def __init__(self, input_size, output_size, learning_rate=0.05, n_iters=1000000):
+    def __init__(self, input_size, output_size, learning_rate=0.01, n_iters=1000000):
         self.lr = learning_rate
         self.n_iters = n_iters
         #self.weights = np.zeros((input_size, output_size))

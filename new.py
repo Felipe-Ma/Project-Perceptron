@@ -6,9 +6,9 @@ import numpy as np
 #THRESHOLD = 0.5
 
 # Bad
-LEARNING_RATE = 2
-EPOCHS = 1
-THRESHOLD = 0.9
+LEARNING_RATE = .01
+EPOCHS = 1000
+THRESHOLD = 0.1
 
 def load_data(filename):
     with open(filename, 'r') as f:
@@ -21,12 +21,10 @@ def load_data(filename):
         features.append([float(lat), float(lon)])
         labels.append(label)
 
-    # Manual Label Encoding
     unique_labels = list(set(labels))
     label_encoding = {label: idx for idx, label in enumerate(unique_labels)}
     encoded_labels = [label_encoding[label] for label in labels]
 
-    # Manual Normalization
     features = np.array(features)
     mean = np.mean(features, axis=0)
     std = np.std(features, axis=0)
