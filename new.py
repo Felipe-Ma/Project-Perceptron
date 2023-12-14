@@ -32,12 +32,15 @@ def load_data(filename):
 
     return normalized_features, np.array(encoded_labels), unique_labels
 
+
 def initialize_weights(num_features, num_classes):
     return np.random.rand(num_features, num_classes)
+
 
 def perceptron_step(inputs, weights, threshold):
     activation = np.dot(inputs, weights)
     return activation > threshold
+
 
 def train_perceptron(features, labels, epochs, threshold, learning_rate):
     num_features = features.shape[1]
@@ -73,20 +76,21 @@ def evaluate_model(weights, features, labels, unique_labels, threshold):
             "False Positives": fp / len(labels) * 100,
             "False Negatives": fn / len(labels) * 100
         }
-
     return stats
+
 
 def save_weights(weights, filename):
     with open(filename, 'w') as file:
-        for neuron_weights in weights.T:  # Transpose to iterate over neurons
+        for neuron_weights in weights.T:
             weights_str = ','.join(map(str, neuron_weights))
             file.write(weights_str + '\n')
+
 
 def load_weights(filename, num_features, num_classes):
     with open(filename, 'r') as file:
         lines = file.readlines()
         weights = [list(map(float, line.strip().split(','))) for line in lines]
-        return np.array(weights).T  # Transpose to match the expected shape
+        return np.array(weights).T
 
 
 def main():
@@ -129,35 +133,22 @@ def main():
                 trained_weights = initialize_weights(2, num_classes)  # Assuming 2 features (lat, lon)
                 print("Weights initialized randomly.")
 
-
         elif choice == '4':
-
             if trained_weights is not None and unique_labels is not None:
-
                 test_filename = input("Enter the filename for the testing data: ")
-
                 test_features, test_labels, _ = load_data(test_filename)
-
                 stats = evaluate_model(trained_weights, test_features, test_labels, unique_labels, THRESHOLD)
 
                 for neuron, neuron_stats in stats.items():
-
                     print(f"Neuron: {neuron}")
-
                     for stat_name, stat_value in neuron_stats.items():
                         print(f"   {stat_name}: {stat_value:.2f}%")
-
             else:
-
                 print("No trained model found. Please train the model first or load weights.")
 
-
         elif choice == '5':
-
             break
-
         else:
-
             print("Invalid choice. Please try again.")
     """
     # Load and train on training data
@@ -177,5 +168,7 @@ def main():
         for stat_name, stat_value in neuron_stats.items():
             print(f"   {stat_name}: {stat_value:.2f}%")
     """
+
+
 if __name__ == "__main__":
     main()
